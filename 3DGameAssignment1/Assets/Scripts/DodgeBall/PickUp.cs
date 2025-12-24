@@ -27,7 +27,7 @@ public class PickUp : MonoBehaviour
             //Reset Physics
             Rigidbody weaponRigidbody = collision.gameObject.GetComponent<Rigidbody>();
             weaponRigidbody.rotation = Quaternion.identity;
-            weaponRigidbody.velocity = Vector3.zero;
+            weaponRigidbody.linearVelocity = Vector3.zero;
             weaponRigidbody.angularVelocity = Vector3.zero;
 
             //Disable gravity

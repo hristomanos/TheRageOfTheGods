@@ -64,7 +64,7 @@ public class Shoot : MonoBehaviour
     void ResetBall()
     {
         //Reset rotation
-        m_WeaponRigidbody.velocity = Vector3.zero;
+        m_WeaponRigidbody.linearVelocity = Vector3.zero;
         m_WeaponPrefab.transform.localRotation = Quaternion.identity;
         m_WeaponRigidbody.rotation = Quaternion.identity;
         m_WeaponRigidbody.angularVelocity = Vector3.zero;

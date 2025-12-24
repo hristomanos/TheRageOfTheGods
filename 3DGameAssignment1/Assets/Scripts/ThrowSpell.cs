@@ -62,6 +62,6 @@ public class ThrowSpell : MonoBehaviour
 
         //Set direction by getting the normalised vector from the destination
         //to the spawnning point and multiply by speed to make it move towards that direction
-        projectile.GetComponent<Rigidbody>().velocity = (m_Destination - m_SpawinningPoint.position).normalized * projectileSpeed;
+        projectile.GetComponent<Rigidbody>().linearVelocity = (m_Destination - m_SpawinningPoint.position).normalized * projectileSpeed;
     }
 }
